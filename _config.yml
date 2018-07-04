@@ -1,0 +1,79 @@
+title: Hannah Clare Photography
+name: Hannah Clare
+email: ENTER EMAIL HERE
+description:
+
+#facebook: https://www.facebook.com
+instagram: https://www.instagram.com/hannahclare_p/
+
+parallax_image_one: /assets/images/Flowers, nature and landscapes/Website-50.jpg # These are the images used for the parallax background
+parallax_image_two: /assets/images/Pet/Christmas-0887.jpg
+
+collections:
+  galleries:
+    output: true
+  pets:
+    output: true
+
+
+project_one: First Gallery
+project_one_description: Describe your project!
+project_one_url: https://github.com/jameshamann/jekyll-material-theme
+project_one_icon: location_on
+
+project_two: Second Gallery
+project_two_description: Describe your project!
+project_two_url: https://github.com/jameshamann/jekyll-material-theme
+project_two_icon: photo_camera
+
+
+project_three: Third Gallery
+project_three_description: Describe your project!
+project_three_url: https://github.com/jameshamann/jekyll-material-theme
+project_three_icon: hotel
+
+
+project_four: Fourth Gallery
+project_four_description: Describe your project!
+project_four_url: https://github.com/jameshamann/jekyll-material-theme
+project_four_icon: restaurant
+
+project_five: fifth Gallery
+project_five_description: Describe your project!
+project_five_url: https://github.com/jameshamann/jekyll-material-theme
+project_five_icon: restaurant
+
+
+portfolio_heading: Portfolio
+portfolio_type: cards
+
+syntax_highlighting: true
+# Skill icons from https://konpa.github.io/devicon/
+
+
+project_button: Github
+
+github: https://github.com/HannahClare28
+#medium: https://medium.com
+
+baseurl: # if your site is located at /blog or /home, enter it here, otherwise leave it empty
+url:  #the url of your site
+
+# Google tracking, if both are filled, tag manager will prevail. Set up GA through GTM in that case
+tag_manager_id: # This looks something like GTM-XXXXXXX
+google_analytics_tracking_id: # This looks something like UA-000000000-0 Head over to https://analytics.google.com/ to setup.
+
+cookies_banner: none # The value "show" will show the cookies banner, the value "none" will hide the banner.
+
+cookie_accept_message: Thanks!
+
+syntax_highlighting: true # include the css for syntax highlighting
+
+# Build settings
+markdown: kramdown
+# theme: minima
+permalink: pretty
+plugins:
+  - jekyll-feed
+  - jekyll-assets
+  - jekyll-minifier

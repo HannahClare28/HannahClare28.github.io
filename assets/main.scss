@@ -1,0 +1,85 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+// Syntax highlighting sass properties and inclusion
+$base-font-size: 1em;
+$spacing-unit:     30px !default;
+
+%vertical-rhythm {
+    margin-bottom: $spacing-unit / 2;
+}
+
+@import "syntax-highlighting";
+@import url('https://fonts.googleapis.com/css?family=Kalam');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+/*@import url("/assets/css/font-awesome.min.css");*/
+@import url("/assets/css/fontawesome-all.css");
+
+
+/* Icons */
+
+.icon {
+    text-decoration: none;
+
+    &:before {
+        display: inline-block;
+        font-family: FontAwesome;
+        font-size: 2.5rem;
+        text-decoration: none;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    > .label {
+        display: none;
+    }
+}
+
+/* List */
+
+ul {
+    list-style: disc;
+
+    &.icons {
+        cursor: default;
+
+        li {
+            display: inline-block;
+        }
+
+        a {
+            display: inline-block;
+            width: 2em;
+            height: 2em;
+            line-height: 2em;
+            text-align: center;
+            border: 0;
+        }
+    }
+}
+
+ol {
+    list-style: decimal;
+}
+
+/* Header */
+
+#header {
+    
+
+    .icons {
+        font-size: 0.8em;
+        text-align: center;
+
+        a {
+            color: #41484c;
+
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+}

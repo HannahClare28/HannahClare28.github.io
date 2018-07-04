@@ -1,0 +1,29 @@
+---
+layout: default
+---
+<head>
+    <!-- other head stuff... -->
+    <link rel="stylesheet" href="/assets/css/flickity.css" media="screen">
+    <link rel="stylesheet" href="/assets/css/fullscreen.css">
+    <link rel="stylesheet" href="/assets/css/parallax.css">
+  </head>
+  <body>
+    <!-- all your great html... -->
+    <script src="/assets/css/flickity.pkgd.js"></script>
+    <script src="/assets/css/fullscreen.js"></script>
+    <script src="/assets/css/parallax.js"></script>
+  </body>
+  <div class="container">
+    <div class="col s10">
+    <div class="row" style="padding:10px;">
+      <a id="home" class="waves-effect waves-light btn white-text darken-2 grey z-depth-4" href="{{site.baseurl}}/portfolio#Galleries"><i class="material-icons">arrow_back</i></a>
+    </div>
+    <h3 class="post-title" itemprop="name headline" style="text-align:center">{{ page.title | escape }}</h3>
+
+    
+  <div class="post-content" itemprop="articleBody">
+    {{ content }}
+    {% include gallery.md %}
+  </div>
+</div>
+</div>
