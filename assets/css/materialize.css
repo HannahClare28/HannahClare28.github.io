@@ -3,6 +3,20 @@
  * Copyright 2014-2017 Materialize
  * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
  */
+ .instagram{ width: 80px;
+background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%); 
+
+  }
+  #insta {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+            /* Also define standard property for compatibility */
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    font-size: 200px; /* change this to change the size*/
+    
+  }
 .materialize-red {
   background-color: #e51c23 !important;
 }
@@ -2763,7 +2777,7 @@ video.responsive-video {
 .parallax-container {
   position: relative;
   overflow: hidden;
-  height: 400px;
+  height: 500px;
 }
 .img-scale {
   /*width: 100%; /* full width 
@@ -2784,7 +2798,7 @@ video.responsive-video {
 }
 
 .parallax-container .parallax img {
-  width: 54px;
+  width: 100%;
   display: none;
   position: absolute;
   left: 50%;
