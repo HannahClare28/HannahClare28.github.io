@@ -9,7 +9,7 @@
           <br/> <br/>  
         </div>  
         <div class="row" style="text-align:center">
-          <a class="waves-effect waves-light btn purple lighten" target="_blank" href="{{site.instagram}}" ><i class="fab fa-instagram right fa-2x " style=" font-size: 2.5rem"></i>Instagram</a>  
+          <a class="waves-effect waves-light btn purple lighten" target="_blank" href="{{site.instagram}}" ><i class="fab fa-instagram right fa-2x " style=" font-size: 2.5rem"></i></a>  
         </div>
       </div>
     </div>
