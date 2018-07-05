@@ -5,4 +5,3 @@ image: /assets/images/Flowers, nature and landscapes/Borde Hill-3.jpg
 permalink: /portfolio/nature
 folder: /assets/images/Flowers, nature and landscapes
 ---
-Add text here for a bit of blurb for each gallery
