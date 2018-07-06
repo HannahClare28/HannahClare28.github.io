@@ -9464,4 +9464,12 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
      1px  1px 0 rgb(255, 255, 255);
 }
 
+.dropShadow{
+  text-shadow:
+    -1px -1px 0 rgb(0, 0, 0),  
+     1px -1px 0 rgb(0, 0, 0),
+    -1px  1px 0 rgb(0, 0, 0),
+     1px  1px 0 rgb(0, 0, 0);
+}
+
 

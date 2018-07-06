@@ -1,4 +1,4 @@
-/*! Flickity v2.1.1
+/*! Flickity v2.1.2
 https://flickity.metafizzy.co
 ---------------------------------------------- */
 
@@ -137,9 +137,16 @@ https://flickity.metafizzy.co
   opacity: 1;
 }
 
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+.carousel {
+  background: #222;
+  height: 100%;
+}
 .carousel-cell {
   width: 100%; /* full width */
-  height: 100%;
   background: #222;
   /* center images in cells with flexbox */
   display: flex;
@@ -150,8 +157,11 @@ https://flickity.metafizzy.co
 .carousel.is-fullscreen .carousel-cell {
   height: 100%;
 }
+.carousel.is-fullscreen .carousel-cell-image {
+  max-width: 100%;
+}
 
-.carousel-cell img {
+.carousel-cell-image {
   display: block;
   max-height: 100%;
 }
