@@ -1,5 +1,5 @@
 /*!
- * Flickity fullscreen v1.0.1
+ * Flickity fullscreen v1.1.0
  * Enable fullscreen view for Flickity
  */
 
@@ -12,23 +12,20 @@
     // AMD
     define( [
       'flickity/js/index',
-      'tap-listener/tap-listener',
     ], factory );
   } else if ( typeof module == 'object' && module.exports ) {
     // CommonJS
     module.exports = factory(
-      require('flickity'),
-      require('tap-listener')
+      require('flickity')
     );
   } else {
     // browser global
     factory(
-      window.Flickity,
-      window.TapListener
+      window.Flickity
     );
   }
 
-}( window, function factory( Flickity, TapListener ) {
+}( window, function factory( Flickity ) {
 
 'use strict';
 
@@ -86,6 +83,7 @@ proto._changeFullscreen = function( isView ) {
   if ( this.isFullscreen ) {
     this.reposition();
   }
+  this.dispatchEvent( 'fullscreenChange', null, [ isView ] );
 };
 
 proto.toggleFullscreen = function() {
@@ -123,15 +121,12 @@ function FullscreenButton( name, flickity ) {
   this.createButton();
   this.createIcon();
   // events
-  // trigger viewFullscreen or exitFullscreen on button tap
-  this.onTap = function() {
+  // trigger viewFullscreen or exitFullscreen on click
+  this.onClick = function() {
     flickity[ name + 'Fullscreen' ]();
   };
-  this.bindTap( this.element );
   this.clickHandler = this.onClick.bind( this );
 }
-
-FullscreenButton.prototype = Object.create( TapListener.prototype );
 
 FullscreenButton.prototype.createButton = function() {
   var element = this.element = document.createElement('button');
@@ -168,21 +163,14 @@ FullscreenButton.prototype.createIcon = function() {
 };
 
 FullscreenButton.prototype.activate = function() {
-  this.on( 'tap', this.onTap );
   this.element.addEventListener( 'click', this.clickHandler );
 };
 
 FullscreenButton.prototype.deactivate = function() {
-  this.off( 'tap', this.onTap );
   this.element.removeEventListener( 'click', this.clickHandler );
 };
 
-FullscreenButton.prototype.onClick = function() {
-  var focused = document.activeElement;
-  if ( focused && focused == this.element ) {
-    this.onTap();
-  }
-};
+Flickity.FullscreenButton = FullscreenButton;
 
 // ----- fin ----- //
 
