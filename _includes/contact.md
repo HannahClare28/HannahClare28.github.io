@@ -5,7 +5,7 @@
         <div style="text-align:center">
           If you like my pictures, get in contact with me and leave a message.
           <br/> <br/> 
-          The best way to keep up with my work is to follow my Instagram account hannahclare_p      
+          The best way to keep up with my work is to follow my Instagram account below      
           <br/> <br/>  
         </div>  
         <div class="row" style="text-align:center">      
@@ -17,7 +17,7 @@
   </div>
 </div>
 <div id="email" class="section scrollspy">
-   <h3 style="text-align:center;">Email me!</h3>   
+   <h3 style="text-align:center;">Get in touch!</h3>   
  </div>
 <div class="card medium" style="height: auto;">   
   <div class="card-content" >
