@@ -8,8 +8,7 @@
           The best way to keep up with my work is to follow my Instagram account below      
           <br/> <br/>  
         </div>  
-        <div class="row" style="text-align:center">      
-        <a style="color: white " target="_blank" href="{{site.instagram}}" ><i class="fab fa-instagram  fa-2x instagram" style=" font-size: 5rem"></i></a>    
+        <div class="row" style="text-align:center">                
         <a style="color: white " target="_blank" href="{{site.instagram}}" ><i id="insta" class="fab fa-instagram  fa-2x" style=" font-size: 5rem"></i></a>        
         </div>
       </div>
