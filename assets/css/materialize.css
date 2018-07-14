@@ -2777,6 +2777,9 @@ video.responsive-video {
 .parallax-container {
   position: relative;
   overflow: hidden;
+  height: 300px;
+}
+.pxc-bottom {
   height: 500px;
 }
 .img-scale {

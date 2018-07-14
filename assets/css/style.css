@@ -114,6 +114,10 @@ html {
       padding: 0;
       border-bottom: 0;
     }
+    .five figure {
+      float: left;
+      width: 20%;
+    }
     .four figure {
       float: left;
       width: 25%;

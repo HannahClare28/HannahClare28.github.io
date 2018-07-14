@@ -1,5 +1,5 @@
 <!--<link rel="stylesheet" href="/assets/css/gallery.css">-->
-<div class="carousel" data-flickity='{ "imagesLoaded": true, "percentPosition": false, "adaptiveHeight": true, "fullscreen": true, "autoPlay": true, "lazyLoad": 1 }'>
+<!--<div class="carousel" data-flickity='{ "imagesLoaded": true, "percentPosition": false, "adaptiveHeight": true, "fullscreen": true, "autoPlay": true, "lazyLoad": 1 }'>
   {% for image  in site.static_files %} 
     {% if image.path contains page.folder  %}
     <div class="carousel-cell">
@@ -8,8 +8,8 @@
     {% endif %}  
   {% endfor %}  
 </div>
-<br/>
-<div class="row">
+<br/>-->
+<!--<div class="row">
   {% for image  in site.static_files %} 
     {% if image.path contains page.folder  %}
         <div class="col s12 m6">
@@ -21,7 +21,7 @@
         </div>        
     {% endif %}  
   {% endfor %}  
-</div>
+</div>-->
 
 <!--<div class="row">       
     <div class="picture cf" itemscope="" itemtype="http://schema.org/ImageGallery">
@@ -52,8 +52,8 @@
             {% endif %}  
         {% endfor %} 
     </div>  
-</div>-->
-<p>New</p>
+</div>
+<p>New</p>-->
 <div class="demo-content cf">        
     <div class="picture {{ page.columns }} cf" itemscope="" itemtype="http://schema.org/ImageGallery">        
         {% for image  in site.static_files %} 
