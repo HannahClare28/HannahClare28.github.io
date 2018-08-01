@@ -10,26 +10,38 @@ layout: default
     <link rel="stylesheet" href="/assets/css/default-skin/default-skin.css"> 
     <link rel="stylesheet" href="/assets/css/style.css"> 
     <script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>   
-  </head>
-  <body>
+</head>
+<body>
     <!-- all your great html... -->
     <script src="/assets/css/flickity.pkgd.js"></script>
     <script src="/assets/css/fullscreen.js"></script>
     <script src="/assets/css/parallax.js"></script>    
     <script src="/assets/js/photoswipe.min.js"></script> 
     <script src="/assets/js/photoswipe-ui-default.min.js"></script> 
-  </body>
-  <div class="container">
-    <div class="col s10">
+</body>
+<div class="container">
+  <div class="col s10">
     <div class="row" style="padding:10px;">
       <a id="home" class="waves-effect waves-light btn white-text darken-2 grey z-depth-4" href="{{site.baseurl}}/#Galleries"><i class="material-icons">arrow_back</i></a>
+      <a id="home" class="waves-effect waves-light btn white-text darken-2 grey z-depth-4" href="{{site.baseurl}}/boudoir">Boudoir</a>
+      <div class="fixed-action-btn horizontal click-to-toggle">
+        <a class="btn-floating btn-large waves-effect waves-default pulse">
+          <i class="material-icons">menu</i>
+        </a>
+        <ul>
+          <li><a class="btn-floating yellow darken-3 waves-effect waves-default" href="#Galleries"><i class="material-icons">photo_library</i></a></li>
+          <li><a class="btn-floating blue darken-2 waves-effect waves-default" href="#about"><i class="material-icons">face</i></a></li>
+          <li><a class="btn-floating red darken-1 waves-effect waves-default" href="#contact"><i class="material-icons">mail</i></a></li>
+        </ul>
+      </div>
     </div>
+    
     <h3 class="post-title" itemprop="name headline" style="text-align:center">{{ page.title | escape }}</h3>
 
     
-  <div class="post-content" itemprop="articleBody">
-    {{ content }}
-    {% include gallery.md %}
+    <div class="post-content" itemprop="articleBody">
+      {{ content }}
+      {% include gallery.md %}
+    </div>
   </div>
-</div>
 </div>

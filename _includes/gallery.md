@@ -54,6 +54,37 @@
     </div>  
 </div>
 <p>New</p>-->
+<!--<div style="
+    line-height: 1; 
+    -webkit-column-count: 3;
+    -webkit-column-gap:   1px;
+    -moz-column-count:    s;
+    -moz-column-gap:      1px;
+    column-count:         s;
+    column-gap:           1px;">
+    {% for image  in site.static_files %} 
+    {% if image.path contains page.folder %}
+    <img src="{{ site.baseurl }}{{ image.path }}" alt="Beach" style="width: 100% !important;
+  height: auto !important;">
+    {% endif %}  
+    {% endfor %}  
+</div>-->
+<div class="wrapper">        
+    <div class="picture {{ page.columns }} cf" itemscope="" itemtype="http://schema.org/ImageGallery">        
+        {% for image  in site.static_files %} 
+        {% if image.path contains page.folder %}
+        {% assign sizeExt = image.name | split: '_'%}
+        {% assign size = sizeExt | last | split: "."%}
+        <figure itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject">
+            <a href="{{ site.baseurl }}{{ image.path }}" itemprop="contentUrl" data-size="{{ size | first }}">
+                <img src="{{ site.baseurl }}{{ image.path }}"  itemprop="thumbnail" alt="Beach">
+            </a>
+            </figure>  
+        {% endif %}  
+    {% endfor %}  
+    </div>                 
+</div>
+<p>Old</p>
 <div class="demo-content cf">        
     <div class="picture {{ page.columns }} cf" itemscope="" itemtype="http://schema.org/ImageGallery">        
         {% for image  in site.static_files %} 
