@@ -55,19 +55,25 @@
 </div>
 <p>New</p>-->
 <div class="demo-content cf">        
-    <div class="picture {{ page.columns }} cf" itemscope="" itemtype="http://schema.org/ImageGallery">        
-        {% for image  in site.static_files %} 
-        {% if image.path contains page.folder %}
-        {% assign sizeExt = image.name | split: '_'%}
-        {% assign size = sizeExt | last | split: "."%}
+    <div class="picture {{ page.columns }} cf" itemscope="" itemtype="http://schema.org/ImageGallery">         
+        <!-- Loops over all files -->
+        {% for image  in site.static_files %}       
+        <!-- Creates variables for /assets/images/<GalleryName> and /assets/images/thumbnails/<GalleryName> -->
+        {% assign fullSizePath = site.ImageLocation | append: page.folder %}  
+        {% assign thumbPath = site.ThumbLocation | append: page.folder %}       
+        <!-- Checks if the current file is from the thumbs folder --> 
+        {% if image.path contains thumbPath %}
+        <!-- Get the fulle image dimensions thats at the end of the thumbnail name -->
+        {% assign sizeExt = image.name | split: '_' %}
+        {% assign size = sizeExt | last | split: "." %}
         <figure itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject">
-            <a href="{{ site.baseurl }}{{ image.path }}" itemprop="contentUrl" data-size="{{ size | first }}">
-                <img src="{{ site.baseurl }}{{ image.path }}"  itemprop="thumbnail" alt="Beach">
-            </a>
-            </figure>  
+            <a href="{{ site.baseurl }}{{ fullSizePath }}/{{ image.name }}" itemprop="contentUrl" data-size="{{ size | first }}">
+                <img src="{{ site.baseurl }}{{ image.path }}"  itemprop="thumbnail" alt="{{ image.name }}">
+            </a>            
+        </figure>              
         {% endif %}  
     {% endfor %}  
-    </div>                 
+    </div>               
 </div>
   
   <!-- Root element of PhotoSwipe. Must have class pswp. -->

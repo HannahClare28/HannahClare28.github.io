@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Flowers, Nature and Landscapes"
-image: /assets/images/Flowers, nature and landscapes/Borde Hill-3_6000x4000.JPEG
+title: "Nature and Landscapes"
+image: /assets/images/thumbnails/Nature and Landscapes/11 - Nature_6000x4000.JPEG
 permalink: /portfolio/nature
-folder: /assets/images/Flowers, nature and landscapes
+folder: /Nature and Landscapes
 columns: three
 ---

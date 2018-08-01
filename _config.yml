@@ -6,8 +6,11 @@ description:
 #facebook: https://www.facebook.com
 instagram: https://www.instagram.com/hannahclare_p/
 
-parallax_image_one: /assets/images/Flowers, nature and landscapes/Lavender-30_5999x3421.JPEG # These are the images used for the parallax background
-parallax_image_two: /assets/images/Pet/01-Christmas-0887_6000x4000.JPEG
+parallax_image_one: /assets/images/Nature and Landscapes/22 - Nature_5999x3421.JPEG # These are the images used for the parallax background
+parallax_image_two: /assets/images/Pets/04 - Pets_6000x4000.JPEG
+
+ImageLocation: /assets/images
+ThumbLocation: /assets/images/thumbnails
 
 collections:
   galleries:

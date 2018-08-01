@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Weddings"
-image: /assets/images/Wedding/Website-23_6000x4000.JPEG
+image: /assets/images/thumbnails/Weddings/05 - Weddings_6000x4000.JPEG
 permalink: /portfolio/weddings
-folder: /assets/images/Wedding
+folder: /Weddings
 columns: three
 ---
