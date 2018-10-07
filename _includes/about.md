@@ -19,8 +19,6 @@
           </div>  
           <div style="text-align:center">
             <p class="signature"> Hannah</p>
-            <p class="signature2"> Hannah</p>
-            <p class="signature3"> Hannah</p>
           </div>             
       </div>
     </div>
