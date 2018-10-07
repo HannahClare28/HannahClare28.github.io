@@ -9464,6 +9464,26 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
      1px -1px 0 rgb(255, 255, 255),
     -1px  1px 0 rgb(255, 255, 255),
      1px  1px 0 rgb(255, 255, 255);*/
+}.signature2{
+  font-family: 'Bad Script', cursive;
+  /*font-family: 'Indie Flower', cursive;*/
+	color:black !important;
+  font-size: 2.5rem;
+  /*text-shadow:
+    -1px -1px 0 rgb(255, 255, 255),  
+     1px -1px 0 rgb(255, 255, 255),
+    -1px  1px 0 rgb(255, 255, 255),
+     1px  1px 0 rgb(255, 255, 255);*/
+}.signature3{
+  font-family: 'Caveat', cursive;
+  /*font-family: 'Indie Flower', cursive;*/
+	color:black !important;
+  font-size: 2.5rem;
+  /*text-shadow:
+    -1px -1px 0 rgb(255, 255, 255),  
+     1px -1px 0 rgb(255, 255, 255),
+    -1px  1px 0 rgb(255, 255, 255),
+     1px  1px 0 rgb(255, 255, 255);*/
 }
 .signatureHeader{
   font-family: 'Kalam', cursive;
@@ -9476,7 +9496,15 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
     -1px  1px 0 rgb(255, 255, 255),
      1px  1px 0 rgb(255, 255, 255);
 }
-
+.titleSig{
+  font-family: 'Bad Script', cursive !important;
+  font-size: 3rem;
+  
+}.titleSig2{
+  font-family: 'Caveat', cursive !important;
+  font-size: 3rem;
+  
+}
 .dropShadow{
   text-shadow:
     -1px -1px 0 rgb(0, 0, 0),  
