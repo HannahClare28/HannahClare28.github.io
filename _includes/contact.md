@@ -16,7 +16,7 @@
   </div>
 </div>
 <div id="email" class="section scrollspy">
-   <h3 style="text-align:center;">Get in touch!</h3>   
+   <h3 style="text-align:center; font-family: 'Bad Script', cursive;">Get in touch!</h3>   
  </div>
 <div class="card medium" style="height: auto;">   
   <div class="card-content" >
