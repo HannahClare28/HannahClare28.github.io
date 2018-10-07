@@ -54,16 +54,40 @@
     </div>  
 </div>
 <p>New</p>-->
-<div class="demo-content cf">        
-    <div class="picture {{ page.columns }} cf" itemscope="" itemtype="http://schema.org/ImageGallery">         
-        <!-- Loops over all files -->
-        {% for image  in site.static_files %}       
+<!--picture makes photoswipe work-->
+<div class="grid picture">
+    <div class="grid-sizer"></div>    
+    <!-- Loops over all files -->
+    {% for image  in site.static_files %}       
         <!-- Creates variables for /assets/images/<GalleryName> and /assets/images/thumbnails/<GalleryName> -->
         {% assign fullSizePath = site.ImageLocation | append: page.folder %}  
         {% assign thumbPath = site.ThumbLocation | append: page.folder %}       
         <!-- Checks if the current file is from the thumbs folder --> 
         {% if image.path contains thumbPath %}
-        <!-- Get the fulle image dimensions thats at the end of the thumbnail name -->
+            <!-- Get the fulle image dimensions thats at the end of the thumbnail name -->
+            {% assign sizeExt = image.name | split: '_' %}
+            {% assign size = sizeExt | last | split: "." %}              
+            <div class="grid-item">
+                <figure itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject">
+                    <a href="{{ site.baseurl }}{{ fullSizePath }}/{{ image.name }}" itemprop="contentUrl" data-size="{{ size | first }}">
+                        <img src="{{ site.baseurl }}{{ image.path }}"  itemprop="thumbnail" alt="{{ image.name }}">
+                    </a>            
+                </figure> 
+            </div>              
+        {% endif %}  
+    {% endfor %}  
+</div>
+
+<!-- <div class="demo-content cf">        
+    <div class="picture {{ page.columns }} cf" itemscope="" itemtype="http://schema.org/ImageGallery">         
+        <!-- Loops over all files 
+        {% for image  in site.static_files %}       
+        <!-- Creates variables for /assets/images/<GalleryName> and /assets/images/thumbnails/<GalleryName> 
+        {% assign fullSizePath = site.ImageLocation | append: page.folder %}  
+        {% assign thumbPath = site.ThumbLocation | append: page.folder %}       
+        <!-- Checks if the current file is from the thumbs folder  
+        {% if image.path contains thumbPath %}
+        <!-- Get the fulle image dimensions thats at the end of the thumbnail name 
         {% assign sizeExt = image.name | split: '_' %}
         {% assign size = sizeExt | last | split: "." %}
         <figure itemprop="associatedMedia" itemscope="" itemtype="http://schema.org/ImageObject">
@@ -74,8 +98,8 @@
         {% endif %}  
     {% endfor %}  
     </div>               
-</div>
-  
+</div> -->
+  <br>
   <!-- Root element of PhotoSwipe. Must have class pswp. -->
   <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="pswp__bg"></div>
@@ -118,3 +142,4 @@
 <script src="/assets/js/photoswipe-ui-default.min.js"></script>
 <!--<script src="/assets/js/script-min.js"></script>    -->
 <script src="/assets/js/gallery.js"></script> 
+<script src="/assets/js/masonry.pkgd.min.js"></script>
